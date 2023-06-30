@@ -1,0 +1,626 @@
+/* ---------- Animaciones ---------- */
+@keyframes rotarY {
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotar {
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes aumentar {
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fail {
+    33% {
+        transform: translate(-20px,0px);
+    }
+    66% {
+        transform: translate(20px,0px);
+    }
+    100% {
+        transform: translate(0px,0px);
+    }
+}
+
+.rotarY {
+    animation-name: rotarY;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+.rotar {
+    animation-name: rotar;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+.aumentar {
+    animation-name: aumentar;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.fail {
+    animation-name: fail;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+}
+
+/*-------- Encabezado ----------*/
+.navbar {
+    background-color:#349F7D;
+    color: white;
+    font-family:'Edu NSW ACT Foundation', cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.active {
+    font-weight: 800;
+}
+
+.nav-item:hover {
+    background-color: #27785F;
+
+}
+
+/* ---------- Cuerpo HTML ---------- */
+body {
+
+    background: url("../imgs/logos/fondo.jpg") no-repeat fixed 100%;
+    background-size: 100vw 100vh;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 75vw;
+    background-color: #1C1C1C;
+}
+
+.ajuste-contenido {
+    max-width: 75vw;
+}
+
+.logo-centrado {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Faster One', cursive;
+    color: white;
+}
+
+.margen-h2 {
+
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: 'Darumadrop One', cursive;
+    color: white;
+}
+
+.main {
+    display: grid;
+    width:75vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    color:white;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.formato-parrafo {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    color:white;
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 700px;
+    justify-self: center;
+    background-color: #349F7D;
+    width: 50vw;
+}
+
+.error {
+    color: red;
+    font-size: 2rem;
+}
+
+.exito {
+    color: #349F7D;
+    font-size: 2rem;
+}
+
+button {
+    padding:5px 50px;
+    border-radius: 10px;
+}
+
+.links-logos:hover {
+
+    background-color:#349F7D;
+    border-radius: 20px;
+}
+
+.hover-raton:hover {
+    color: #349F7D;
+}
+
+.images-logos-anchura {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.images-logos-altura {
+    height: 200px;
+}
+
+.fondo-blanco {
+    background-color: white;
+}
+
+/* ----------- index ----------- */
+
+header{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+
+}
+
+.sesion {
+    padding:20px 20px 0 0;
+    display: flex;
+    justify-content: end;
+    width: 75vw;
+
+}
+
+.iniciar {
+    background-color: #349F7D;
+}
+
+.iniciar:hover {
+
+    color: white;
+}
+
+h1 {
+    color:white;
+    align-self:center;
+    justify-self: center;
+    font-family:'Darumadrop One', cursive;
+    letter-spacing: 3vw;
+    filter: drop-shadow(0px 0px 15px white);
+}
+
+.carousel {
+    background-color: #349F7D;
+    width: 40vw;
+}
+
+.size-images{
+    width: 300px;
+}
+
+.size-images-psp{
+    width: 250px;
+}
+
+/* ---------- Confirmar -----------*/
+
+.confirmar:hover {
+    background-color: #27785F;
+}
+
+/* ---------- Juegos por categoria ---------- */
+
+.juegosCategoria {
+    background-color: #349F7D;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family:'Edu NSW ACT Foundation', cursive;
+    width: 20vw;
+
+}
+
+.juegoCategoria {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+
+.juegosCategoria img{
+
+    width: 15vw;
+}
+
+.juegosCategoria:hover {
+    background-color: #27785F;
+}
+
+/* ---------- Formulario ---------- */
+
+.centra-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.border-form {
+    width: 60vw;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 60%;
+    justify-self: center;
+    align-content: space-around;
+    height: 400px;
+}
+
+label {
+    color:#349F7D;
+    font-family:'Edu NSW ACT Foundation', cursive;
+    font-size: 1.5rem;
+}
+
+input {
+    border-radius: 5px;
+    background-color: #349F7D;
+    color: white;
+    height: 50px;
+
+}
+
+input:focus{
+    outline: none;
+    border: 0;
+    color: white;
+    border: 3px solid white;
+}
+
+input::placeholder {
+    color: black;
+}
+
+input[type='checkbox'] {
+
+    width: 30px;
+}
+
+.recordar {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: start;
+}
+
+.recordar p{
+    justify-self: start;
+}
+
+.texto-recordar{
+    color: white;
+}
+
+textarea {
+    border-radius: 20px;
+}
+
+.validar {
+    min-width: 33vmin;
+    color:white;
+    border-radius: 20px;
+    margin: 0 auto;
+    height: unset;
+}
+
+.validar:hover {
+    background-color: #27785F;
+}
+
+/* ------------- Columnas ------------- */
+
+main section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1 / 2;
+}
+
+.tres-columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    justify-items: center;
+
+}
+
+.article-tres-columnas {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 20px;
+}
+
+.dos-columnas {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.una-columna {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 50px;
+}
+
+/* -------------- Juego ---------------- */
+
+.img-juego {
+    width: 400px;
+}
+
+.titulo-juego {
+    grid-column: 2 / 3;
+}
+
+.cat-juego {
+    grid-column: 3 / 4;
+}
+
+.descripcion-juego {
+    grid-column: 1 / 4;
+}
+
+.descargar {
+    border-radius: 20px;
+    width: 33vw;
+}
+
+
+.descargar:hover {
+    background-color: #349F7D;
+    color: white;
+}
+
+.margin-bottom {
+    margin-bottom: 100px;
+}
+
+/* ---------- Pie de pagina ---------- */
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    color: white;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 1.2rem;
+}
+
+.footer-logo {
+    grid-column: 1 / 2;
+}
+
+.footer-copy {
+    grid-column: 2 / 3;
+}
+
+.footer-links {
+    grid-column: 3 / 4;
+}
+
+@media (min-width:601px) and (max-width:768px) {
+
+    /* --------- index --------- */
+
+    .carousel {
+        width: 75vw;
+    }
+
+    .carousel-item img{
+        width: 40vw;
+    }
+
+    /* --------- Cuerpo HTML --------- */
+    body {
+        background-size: 100% 100%;
+    }
+
+    .ajuste-contenido {
+        width: 75vw;
+    }
+
+    .contenido {
+        width: 75vw;
+    }
+
+    /* ----------- Columnas ---------- */
+    .tres-columnas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ----------- Juego -----------*/
+    .img-juego {
+        width: 33vw;
+        grid-column: 1 / 2;
+    }
+
+    .titulo-juego {
+        grid-column: 2 / 3;
+    }
+
+    .cat-juego {
+        grid-column: 1 / 4;
+    }
+
+    .descripcion-juego {
+        grid-column: 1 / 4;
+    }
+
+
+    /* --------------- Juegos por categoria ------------ */
+    .juegosCategoria {
+
+        width: 35vw;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    /* --------- Cuerpo HTML ------------ */
+    body {
+        background-size: 100% 100%;
+    }
+
+    .contenido {
+        width: 75vw;
+    }
+
+
+    /* --------- index -------------- */
+    .sesion {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 20px;
+    }
+
+    .cabecera-index {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        justify-self: center;
+    }
+
+    .carousel {
+        background-color: #349F7D;
+        width: 75vw;
+    }
+
+    .carousel-item img{
+
+        width: 40vw;
+    }
+
+    .imagen-index {
+        justify-self: center;
+    }
+
+
+    /* --------- Formulario --------- */
+    form {
+        justify-content:space-evenly;
+    }
+
+    /* --------- Juegos por categoria --------- */
+    .juegosCategoria {
+
+        width: 75vw;
+    }
+
+    .juegoCategoria img{
+
+        width: 50vw;
+    }
+
+
+    /* --------- Columnas grid --------- */
+    .tres-columnas {
+        display: grid;
+        grid-template-columns: 75vw;
+        justify-items: center;
+    }
+
+    .elemento-columna {
+        grid-column: 1;
+        justify-self: center;
+    }
+
+    .dos-columnas {
+        grid-template-columns: 1fr;
+    }
+
+    /* ----------- Juego ---------- */
+
+    .img-juego {
+        grid-column: 1;
+        width: 33vw;
+    }
+
+    .titulo-juego {
+        grid-column: 1;
+    }
+
+    .cat-juego {
+        grid-column: 1;
+    }
+
+    .descripcion-juego {
+        grid-column: 1;
+    }
+
+    .descargar {
+        border-radius: 20px;
+        min-width: 50vw;
+    }
+
+
+    /* ---------- Pie de pagina ---------- */
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo {
+        grid-column: 1;
+    }
+
+    .footer-copy {
+        grid-column: 1;
+    }
+
+    .footer-links {
+        grid-column: 1;
+    }
+
+}
